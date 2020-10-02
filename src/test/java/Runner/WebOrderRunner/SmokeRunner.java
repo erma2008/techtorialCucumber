@@ -10,7 +10,11 @@ import org.junit.runner.RunWith;
         glue = "StepDefinitions",
         monochrome = true,
         dryRun = false,
-        tags = "@smoke"
+        tags = "@smoke",
+        plugin = {"html:target/cucumber-html-report",
+                  "json:target/cucumber.json",
+                  "junit:target/cucumber.xml",
+                  "rerun:target/rerun.txt"},
 )
 public class SmokeRunner {
 }
