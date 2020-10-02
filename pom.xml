@@ -22,6 +22,10 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <selenium.version>3.141.59</selenium.version>
+        <cucumber-java.version>5.4.0</cucumber-java.version>
+        <junit.version>4.13</junit.version>
+        <webdrivermanager.version>3.8.1</webdrivermanager.version>
     </properties>
     <dependencies>
         <!-- This is for UI Automation -->
@@ -29,7 +33,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>${selenium.version}</version>
         </dependency>
 
         <!-- To be able to work with java and cucumber together,
@@ -37,7 +41,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.4.0</version>
+            <version>${cucumber-java.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -46,7 +50,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>5.4.0</version>
+            <version>${cucumber-java.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -55,7 +59,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -65,7 +69,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.8.1</version>
+            <version>${webdrivermanager.version}</version>
         </dependency>
 
     </dependencies>
